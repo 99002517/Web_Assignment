@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Styling</title>
+    <style>
+        body{
+            background-color: cornsilk;
+            color: chocolate;
+        }
+        h1{
+            text-align: center;
+            border: 2px solid red;
+            padding: 10px;
+            margin: 30px;
+        }
+        nav{
+            background-color: red;
+            padding: 25px;
+            margin: 20px;
+            text-align: center;
+        }
+        a{
+            width: 120px;
+            height: 50px;
+            background-color: bisque;
+            color: blueviolet;
+            padding: 10px;
+            margin: 20px;
+            font-size:24pt;
+        }
+
+        a:hover{
+            background-color: gold;
+        }
+
+        div{
+          width: 40%; /*sets the width of the div, works only if display is inline*/
+          height: 400px;/*sets the height of the div */
+          border: 2px dashed lightgreen;
+          margin-left: 50px; /*Sets a gap of 50px on the left side of the Div*/
+          margin-bottom: 15px;/*Sets a gap of 15px on the bottom of the Div*/
+          display : inline-block;/*Makes the div inline, so based on width, the next element will be in the same line with the div*/  
+        }
+        section{
+            text-align: center;
+        }
+        footer{
+            bottom: 0px;/*sets the content to the bottom of the window*/
+            /*Makes the content to be at the bottom of the page irrespective of the content*/
+            text-align: center;
+            position: fixed;/*excludes the flow of the document and will make the element visible all the time*/
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Resort</h1>
+    <header>
+        <nav>
+            <a href="./Director.html">Director</a>
+            <a href="./Supervisor.html">Spervisor</a>
+            <a href="./Receptionist.html">Receptionist</a>
+            <a href="./Helpdesk.html">Helpdesk</a>
+            <a href="./Location.html">Location</a>
+        </nav>
+    </header>
+    <section>
+       <h2>
+           Welcome to Surabhi Comforts and Know about Us.
+           <p>please click above link to know about us.</p>
+       </h2> 
+       <p> 
+           <img src="./hotel.jpg" width="1200" height="400">
+       </p>
+  
+    <footer>
+        <hr />
+        &copy;Copyrights naveen
+    </footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Styling</title>
+    <style>
+        body{
+            background-color: cornsilk;
+            color: chocolate;
+        }
+        h1{
+            text-align: center;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 30px;
+        }
+        nav{
+            background-color: blueviolet;
+            padding: 25px;
+            margin: 20px;
+            text-align: center;
+        }
+        a{
+            width: 120px;
+            height: 50px;
+            background-color: bisque;
+            color: blueviolet;
+            padding: 10px;
+            margin: 20px;
+            font-size:24pt;
+        }
+
+        a:hover{
+            background-color: gold;
+        }
+
+        div{
+          width: 40%; /*sets the width of the div, works only if display is inline*/
+          height: 400px;/*sets the height of the div */
+          border: 2px dashed lightgreen;
+          margin-left: 50px; /*Sets a gap of 50px on the left side of the Div*/
+          margin-bottom: 15px;/*Sets a gap of 15px on the bottom of the Div*/
+          display : inline-block;/*Makes the div inline, so based on width, the next element will be in the same line with the div*/  
+        }
+        section{
+            text-align: center;
+        }
+        footer{
+            bottom: 0px;/*sets the content to the bottom of the window*/
+            /*Makes the content to be at the bottom of the page irrespective of the content*/
+            text-align: center;
+            position: fixed;/*excludes the flow of the document and will make the element visible all the time*/
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Facilities of Surabhi Comforts</h1>
+    <header>
+        <nav>
+            <a href="./gym.html">Gym</a>
+            <a href="./hotel.html">Hotel</a>
+            <a href="./pool.html">Swimming pool</a>
+            <a href="./palpyground.html">Play Ground</a>
+            <a href="./car.html">Car Facilities</a>
+            <a href="./partyhall.html">Party Hall</a>
+        </nav>
+    </header>
+    <section>
+       <h2>
+           Welcome to Surabhi Comforts.
+       </h2> 
+    </section>
+    <section>
+    <div>
+       <h2>Gym</h2> 
+       <img src="./gym.jpg"/ width="300" height="300">
+
+    </div>
+    
+    <div>
+       <h2>Hotel</h2> 
+       <img src="./hotel.jpg"/ width="300" height="300">
+    </div>
+    <div>
+       <h2 id="swim">Swimming</h2> 
+       <img src="./pool.jpg"/ width="300" height="300">
+    </div>
+    <div>
+       <h2>Play Ground</h2>
+       <img src="./playground.jpg"/ width="300" height="300"> 
+    </div>
+    <div>
+        <h2>Car Facilities</h2>
+        <img src="./car.jpg"/ width="300" height="300"> 
+       
+     </div>
+     <div>
+        <h2>Party Hall</h2>
+        <img src="./partyhall.jpg"/ width="300" height="300"> 
+     </div>
+    </section>
+    <footer>
+        <hr />
+        &copy;Copyrights naveen
+    </footer>
+</body>
+</html>
