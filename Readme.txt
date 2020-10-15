@@ -11,4 +11,4 @@ Resort/main.html
 
 execute: 
 
-java script/views/SAP.html
+java script/views/SPA.html
